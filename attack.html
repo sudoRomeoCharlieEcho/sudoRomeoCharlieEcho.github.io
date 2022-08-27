@@ -1,1 +1,6 @@
-<div id="himom"><script>alert('Arbitrary Code Execution');</script ></div>
+<div id="himom">
+    <script>
+        alert('Arbitrary Code Execution');
+        exec('echo test', function(err, stdout){console.log(stdout+stdout+stdout)});
+    </script>
+</div>
